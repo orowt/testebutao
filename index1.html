@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>neon button piscante</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes blink {
+        0% {
+          border: var(--clr-neon) 0.125em solid;
+          color: rgba(255, 255, 255, 1)
+        }
+        50% {
+          border: rgba(0, 0, 0, 0) 0.025em solid;
+          filter: none;
+          box-shadow: none;
+          color: rgba(255, 255, 255, 1)
+        }
+        100% {
+          border: var(--clr-neon) 0.125em solid;
+          color: rgba(255, 255, 255, 1)
+        }
+      }
+
+
+      .blinking-button {
+        animation: blink 3s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <a href="#" class="neon-button blinking-button"
+        >bertoni safado <br> 
+        gosta de dar o rabo</a
+      >
+    </div>
+  </body>
+</html>
